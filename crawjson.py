@@ -1,0 +1,93 @@
+data = """0326973839	
+0977749413	
+0988168525	
+0794029976	
+0387798178	
+0375659078	
+0988459758	
+0383708872	
+0372977990	
+0399400906	
+0336333884	
+0565168039	
+0983605337	
+0987128490	
+0397598890	
+0337661973	
+0984610855	
+0326714999	
+0988781617	
+0967083599	
+0362322991	
+0342013409	
+0328000828	
+0354405108	
+0987361400	
+0985826763	
+0778407424	
+0987531242	
+0976587016	
+0364485643	
+0987563235	
+0967634226	
+"""
+#print(data.split("\n"))
+def checkYear(year):
+	return (((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0))
+year = 1000000
+# for i in range(1,year+1):
+# 	if checkYear(i):
+# 		sout = "else if(year=="+str(i)+"){\n\t"+"System.out.println(\"co 29 ngay\");\n}"
+# 		print(sout)
+# 	else:
+# 		sout = "else if(year=="+str(i)+"){\n\t"+"System.out.println(\"co 28 ngay\");\n}"
+# 		print(sout)
+
+
+
+string = """
+Tác phẩm văn chương muôn đời tựa như dòng sông chảy trôi miên man vào tâm hồn nhân loại, khởi nguồn từ hiện thực cuộc đời còn lắm chông chênh mà bước vào trái tim bạn đọc đang căng tràn nhựa sống. Mạch xúc cảm trào dâng mãnh liệt ấy được kết tụ thành hình thức biểu đạt rõ ràng mà nhà văn chú trọng, nói khác hơn, dấu ấn ghi đậm nơi tâm tư độc giả phụ thuộc vào hệ thống hình tượng nhân vật, với cái nhìn khách quan về thế giới nhân sinh ngoài xã hội. Tác giả- ở khía cạnh nào đó lại chẳng khác gì một họa sĩ mô phỏng bao người bằng kiểu nhân vật điển hình, thông qua đó thể hiện cách nhìn đời qua đôi mắt nghệ thuật còn đọng suy tư cùng trăn trở… Và như thế, giữa cái bao la của địa hạt ngôn từ, Tô Hoài bước đi lặng thầm, mang nặng một mối tình Tây Bắc chân thành, nồng nhiệt mà tác phẩm “Vợ chồng A Phủ” chính là minh chứng cụ thể. Hình ảnh người con gái vùng cao được nhà văn khắc họa ngay trong nghịch cảnh lại tỏa ra vẻ đẹp tâm hồn đáng trân trọng, nhất là trong hai đoạn trích sau: “…” Qua đó, ta bất chợt tìm thấy thế giới quan trong tâm tưởng người cầm bút từ sự khám phá nhân sinh, từ cái nhìn mang tính phát hiện, bao quát hơn chính là tài hoa của một đời người, một đời văn…
+
+Tô Hoài, nhà văn lớn của nền văn học Việt Nam hiện đại, đã đóng góp cho vườn địa đàng nghệ thuật một khối lượng tác phẩm đồ sộ với đa dạng các thể loại. Những trang viết về miền núi, về Hà Nội một thời đã xa,…đã phần nào nằm trọn trong trái tim “khách văn chương” nước nhà. Với cách kể chuyện hồn nhiên, chân thật, ngòi bút hiện thực đậm nét nhưng cũng giàu “giọt nước mắt đắng cay”, nhà văn đã khắc tên mình lên triền đá thời gian để mãi mãi, độc giả còn vương vấn một hồn văn thiết tha với bao kiếp người… “Vợ chồng A Phủ” có thể được xem như tuyệt tác văn chương về vùng núi cao Tây Bắc, là kết quả của chuyến đi giải phóng tám năng ròng. Sự hiểu biết sâu sắc, tình yêu thương con người cùng cảnh vật hoang sơ mà giàu sức sống đều được nhà văn thai nghén, ấp ủ và tỏ bày một cách sinh động trong tác phẩm này.
+
+“Mị vùng bước đi. Nhưng chân đau không cựa quậy được. Mị không nghe tiếng sáo nữa. Chỉ còn nghe tiếng chân ngựa đạp vào vách. Ngựa vẫn đứng yên, gãi chân, nhai cỏ. Mị thổn thức nghĩ mình không bằng con ngựa”. Phép đối chiếu, so sánh, ẩn dụ, hoán đổi vai trò giữa người và động vật vẫn luôn được các nhà văn sử dụng cho một mục đích nghệ thuật nào đó. Ngay chính Tô Hoài cũng đã dùng hình tượng dế mèn để miêu tả cuộc phiêu lưu với tất cả các tính cách rõ nét của con người thực tế. Hay nhà văn nước Anh là Jack London cũng dùng hình tượng động vật làm nhân vật chính trong tác phẩm của mình, “Tiếng gọi nơi hoang dã” thành công một phần nhờ vào nghệ thuật xây dựng hình tượng độc đáo. Ở đây, Mị là con người nhưng phần nào đã hiện diện hình ảnh của trâu, của ngựa, tức con người cô đã bị bóc lột thậm chí hơn cả những loài vật đó. Ngựa còn có lúc nằm “gãi chân, nhai cỏ”, Mị phải làm việc quần quật cả ngày cả đêm. Chính cô đã tự hạ thấp vị thế của mình rằng “không bằng con ngựa”…
+tinh thần của tập tục xưa cũ nhưng ở đâu đó trong tâm hồn kia vẫn hừng hực ngọn lửa của ước mơ, mong muốn đi theo tiếng gọi tuổi trẻ. “Mị vùng bước đi”, bước đi đến hạnh phúc đã bị tước đoạt, bước đến bến bờ của bình yên tĩnh lặng…
+
+Không phải một lần, trái tim Mị được thức tỉnh. Cuộc sống im ắng trong vô vàn tủi nhục lần nữa được đánh thức bởi tiếng nói của tình người. Xưa kia Bá Nha tìm thấy Tử Kì bằng niềm đam mê nhạc điệu, bằng sự thấu hiểu nhau trong quá trình thưởng thức tài năng. Còn ở đây, Mị và A Phủ cũng tìm thấy sự tương đồng – dù có chút trớ trêu trong nghịch cảnh. Họ giống nhau ở vị thế xã hội thấp hèn, ở tấm lòng khát khao được sống, được tự do mà hơn hết đều cùng là nạn nhân vô cớ của bọn nhà thống trị. Mị không đáng bị ngược đãi, A Phủ cũng thế, không ai đáng bị tổn thương. Trong khi Mị đang bị chèn ép bởi thần quyền miền núi thì A Phủ bị gán ghép tội lỗi đánh con quan, làm mất con bò nhà Pá Tra. Hai thế lực trên dường như luôn xuất hiện song song, cùng lúc tấn công sự sống của con người như một sự nhấn mạnh tội ác cùng cái cố chấp đáng thương của nhân dân thời ấy. Vì sao người ta có thể chịu đựng đau khổ chỉ vì những tập tục ăn mòn vào tâm trí? Câu hỏi ấy, nhà văn có lẽ đã để cho độc giả tự tìm câu trả lời.
+
+A Phủ đáng thương nhưng Mị không còn thấy rung động, hành động ra ngoài sưởi lửa diễn ra liên tục mỗi ngày, bên cạnh chỗ A Phủ bị trói. Phải chăng, Mị đã không còn cảm xúc? Những sự việc tương tự như thế không phải chuyện hiếm hoi, thống lí dựa vào quyền thế mà chèn ép dân lành, Mị vốn đã quen với cảnh trói người như thế và chính Mị cũng đã từng bị trói…Nhưng chính giọt nước mắt A Phủ đã thức tỉnh cái vẻ trơ lì của cô, Mị thương người rồi lại thương mình, bất chợt nhận ra sự thật tàn ác của bọn nhà thống lí. Đêm đông hôm ấy cũng chính là đêm Mị thực sự sống trở lại…
+
+“Trong nhà tối bưng, Mị rón rén bước lại, A Phủ vẫn nhắm mắt. Nhưng Mị tưởng như A Phủ biết có người bước lại… Mị rút con dao nhỏ cắt lúa, cắt nút dây mây. A Phủ thở phè từng hơi, như rắn thở, không biết mê hay tỉnh. Lần lần, đến lúc gỡ được hết dây trói ở người A Phủ thì Mị cũng hốt hoảng. Mị chỉ thì thào được một tiếng “Đi đi…” rồi Mị nghẹn lại”. Bên cạnh lần sửa soạn đi chơi thì đây là lần Mị có hành động táo bạo, bất chấp những gì phía trước mình phải đối mặt. Đây cũng là lần thứ hai, Mị được thức tỉnh. Vượt lên trên tất cả những nỗi sợ vô hình, Mị thẳng tay cắt dây trói, giải thoát A Phủ khỏi tình cảnh cấp thiết.
+
+“A Phủ khuỵu xuống không bước nổi. Nhưng trước cái chết có thể đến nơi ngay, A Phủ lại quật sức vùng lên, chạy. Mị đứng lặng trong bóng tối. Trời tối lắm. Mị vẫn băng đi. Mị đuổi kịp A Phủ, đã lăn, chạy xuống tới lưng dốc”. Bóng tối bao trùm trong suy nghĩ Mị sau khi cô thả A Phủ đi, tất cả nỗi sợ bỗng chốc ùa lại trong tâm trí. Mị nhớ đến sự trói buộc của thần quyền, của tục cúng trình ma, Mị không dám chạy khỏi căn nhà Pá Tra dù là nó u ám đến cùng cực. Đã có lần, Mị định dùng lá ngón tự tử nhưng vì thương cha, cô đã cam tâm sống trong đau khổ, mà bên cạnh lòng hiếu thảo đó, độc giả có thể cảm nhận được nỗi lo về phong tục miền núi, rằng cô phải chết rũ xương ở đây thôi. Thực chất, vấn đề tâm linh vẫn luôn là khía cạnh con người quan tâm, dù là không hữu hình. Văn chương từng nhắc đến vấn đề này không ít lần, xét về phía tiêu cực thì điều này trở thành thế lực cản trở việc nhân vật tìm đến hạnh phúc mà Mị là điển hình cụ thể nhất. Vùng cao Tây Bắc nói riêng và các khu vực miền núi nói chung đa phần sẽ chịu ảnh hưởng của nhiều tập tục từ thuở xưa. Nhà thống lí cũng lợi dụng vấn đề này mà ép Mị chấp nhận. Nhưng dẫu sao, khát vọng sống của con người luôn được đưa lên hàng đầu. Mị đã chạy theo sau A Phủ, đã tự thoát khỏi sự trói buộc hữu hình và vô hình đó, mạnh mẽ bước đến vùng đất mới cửa sự khởi đầu. Hai con người xa lạ nhưng cùng chung sợi dây số phận đã nắm tay nhau chạy đi, bỏ lại sau lưng là những uất ức, ngang trái của quá khứ. Vùng đất Phiền Sa mở ra với những ước mơ tươi sáng trong tương lai, dưới ánh sáng cách mạng, con người vững tin về bến bờ hạnh phúc…
+
+C
+ữa một vườn địa đàng căng tràn nhựa sống, độc giả bất chợt bắt gặp một bóng hình âm thầm với công việc nghìn năm. Mảnh đất thực kia được anh chăm chút đến rực rỡ muôn trùng, ánh trăng soi sáng một tâm hồn thiện lương và cao cả. Có yêu thương mới có sự vun trồng, có tôn trọng mới dành trọn sự nâng niu. Khi khu vườn nở hoa, loài hoa đẹp nhất mang tên nghệ sĩ. Và Tô Hoài đã để lại đóa hoa ban rừng mang niềm tin bất diệt, sức sống tiềm tàng không bao giờ phai nhạt nơi vùng Tây Bắc hoang sơ mà nhân vật Mị trong tác phẩm “Vợ chồng A Phủ” là điển hình sống trọn với thời gian.
+"""
+
+a = []
+# for i in string:
+#     if i != "," and i != "." and i != ":" and i != "?" and i != '"' and i != "(" and i != ")" and i != "-" and i != "“" and i != "”":
+#         if i == "\n":
+#             a.append(" ")
+#         else:
+#             a.append(i)
+# print("".join(a))
+string = """Tác phẩm văn chương muôn đời tựa như dòng sông chảy trôi miên man vào tâm hồn nhân loại khởi nguồn từ hiện thực cuộc đời còn lắm chông chênh mà bước vào trái tim bạn đọc đang căng tràn nhựa sống Mạch xúc cảm trào dâng mãnh liệt ấy được kết tụ thành hình thức biểu đạt rõ ràng mà nhà văn chú trọng nói khác hơn dấu ấn ghi đậm nơi tâm tư độc giả phụ thuộc vào hệ thống hình tượng nhân vật với cái nhìn khách quan về thế giới nhân sinh ngoài xã hội Tác giả ở khía cạnh nào đó lại chẳng khác gì một họa sĩ mô phỏng bao người bằng kiểu nhân vật điển hình thông qua đó thể hiện cách nhìn đời qua đôi mắt nghệ thuật còn đọng suy tư cùng trăn trở… Và như thế giữa cái bao la của địa hạt ngôn từ Tô Hoài bước đi lặng thầm mang nặng một mối tình Tây Bắc chân thành nồng nhiệt mà tác phẩm Vợ chồng A Phủ chính là minh chứng cụ thể Hình ảnh người con gái vùng cao được nhà văn khắc họa ngay trong nghịch cảnh lại tỏa ra vẻ đẹp tâm hồn đáng trân trọng nhất là trong hai đoạn trích sau … Qua đó ta bất chợt tìm thấy thế giới quan trong tâm tưởng người cầm bút từ sự khám phá nhân sinh từ cái nhìn mang tính phát hiện bao quát hơn chính là tài hoa của một đời người một đời văn…  Tô Hoài nhà văn lớn của nền văn học Việt Nam hiện đại đã đóng góp cho vườn địa đàng nghệ thuật một khối lượng tác phẩm đồ sộ với đa dạng các thể loại Những trang viết về miền núi về Hà Nội một thời đã xa…đã phần nào nằm trọn trong trái tim khách văn chương nước nhà Với cách kể chuyện hồn nhiên chân thật ngòi bút hiện thực đậm nét nhưng cũng giàu giọt nước mắt đắng cay nhà văn đã khắc tên mình lên triền đá thời gian để mãi mãi độc giả còn vương vấn một hồn văn thiết tha với bao kiếp người… Vợ chồng A Phủ có thể được xem như tuyệt tác văn chương về vùng núi cao Tây Bắc là kết quả của chuyến đi giải phóng tám năng ròng Sự hiểu biết sâu sắc tình yêu thương con người cùng cảnh vật hoang sơ mà giàu sức sống đều được nhà văn thai nghén ấp ủ và tỏ bày một cách sinh động trong tác phẩm này  Mị vùng bước đi Nhưng chân đau không cựa quậy được Mị không nghe tiếng sáo nữa Chỉ còn nghe tiếng chân ngựa đạp vào vách Ngựa vẫn đứng yên gãi chân nhai cỏ Mị thổn thức nghĩ mình không bằng con ngựa Phép đối chiếu so sánh ẩn dụ hoán đổi vai trò giữa người và động vật vẫn luôn được các nhà văn sử dụng cho một mục đích nghệ thuật nào đó Ngay chính Tô Hoài cũng đã dùng hình tượng dế mèn để miêu tả cuộc phiêu lưu với tất cả các tính cách rõ nét của con người thực tế Hay nhà văn nước Anh là Jack London cũng dùng hình tượng động vật làm nhân vật chính trong tác phẩm của mình Tiếng gọi nơi hoang dã thành công một phần nhờ vào nghệ thuật xây dựng hình tượng độc đáo Ở đây Mị là con người nhưng phần nào đã hiện diện hình ảnh của trâu của ngựa tức con người cô đã bị bóc lột thậm chí hơn cả những loài vật đó Ngựa còn có lúc nằm gãi chân nhai cỏ Mị phải làm việc quần quật cả ngày cả đêm Chính cô đã tự hạ thấp vị thế của mình rằng không bằng con ngựa… tinh thần của tập tục xưa cũ nhưng ở đâu đó trong tâm hồn kia vẫn hừng hực ngọn lửa của ước mơ mong muốn đi theo tiếng gọi tuổi trẻ Mị vùng bước đi bước đi đến hạnh phúc đã bị tước đoạt bước đến bến bờ của bình yên tĩnh lặng…  Không phải một lần trái tim Mị được thức tỉnh Cuộc sống im ắng trong vô vàn tủi nhục lần nữa được đánh thức bởi tiếng nói của tình người Xưa kia Bá Nha tìm thấy Tử Kì bằng niềm đam mê nhạc điệu bằng sự thấu hiểu nhau trong quá trình thưởng thức tài năng Còn ở đây Mị và A Phủ cũng tìm thấy sự tương đồng – dù có chút trớ trêu trong nghịch cảnh Họ giống nhau ở vị thế xã hội thấp hèn ở tấm lòng khát khao được sống được tự do mà hơn hết đều cùng là nạn nhân vô cớ của bọn nhà thống trị Mị không đáng bị ngược đãi A Phủ cũng thế không ai đáng bị tổn thương Trong khi Mị đang bị chèn ép bởi thần quyền miền núi thì A Phủ bị gán ghép tội lỗi đánh con quan làm mất con bò nhà Pá Tra Hai thế lực trên dường như luôn xuất hiện song song cùng lúc tấn công sự sống của con người như một sự nhấn mạnh tội ác cùng cái cố chấp đáng thương của nhân dân thời ấy Vì sao người ta có thể chịu đựng đau khổ chỉ vì những tập tục ăn mòn vào tâm trí Câu hỏi ấy nhà văn có lẽ đã để cho độc giả tự tìm câu trả lời  A Phủ đáng thương nhưng Mị không còn thấy rung động hành động ra ngoài sưởi lửa diễn ra liên tục mỗi ngày bên cạnh chỗ A Phủ bị trói Phải chăng Mị đã không còn cảm xúc Những sự việc tương tự như thế không phải chuyện hiếm hoi thống lí dựa vào quyền thế mà chèn ép dân lành Mị vốn đã quen với cảnh trói người như thế và chính Mị cũng đã từng bị trói…Nhưng chính giọt nước mắt A Phủ đã thức tỉnh cái vẻ trơ lì của cô Mị thương người rồi lại thương mình bất chợt nhận ra sự thật tàn ác của bọn nhà thống lí Đêm đông hôm ấy cũng chính là đêm Mị thực sự sống trở lại…  Trong nhà tối bưng Mị rón rén bước lại A Phủ vẫn nhắm mắt Nhưng Mị tưởng như A Phủ biết có người bước lại… Mị rút con dao nhỏ cắt lúa cắt nút dây mây A Phủ thở phè từng hơi như rắn thở không biết mê hay tỉnh Lần lần đến lúc gỡ được hết dây trói ở người A Phủ thì Mị cũng hốt hoảng Mị chỉ thì thào được một tiếng Đi đi… rồi Mị nghẹn lại Bên cạnh lần sửa soạn đi chơi thì đây là lần Mị có hành động táo bạo bất chấp những gì phía trước mình phải đối mặt Đây cũng là lần thứ hai Mị được thức tỉnh Vượt lên trên tất cả những nỗi sợ vô hình Mị thẳng tay cắt dây trói giải thoát A Phủ khỏi tình cảnh cấp thiết  A Phủ khuỵu xuống không bước nổi Nhưng trước cái chết có thể đến nơi ngay A Phủ lại quật sức vùng lên chạy Mị đứng lặng trong bóng tối Trời tối lắm Mị vẫn băng đi Mị đuổi kịp A Phủ đã lăn chạy xuống tới lưng dốc Bóng tối bao trùm trong suy nghĩ Mị sau khi cô thả A Phủ đi tất cả nỗi sợ bỗng chốc ùa lại trong tâm trí Mị nhớ đến sự trói buộc của thần quyền của tục cúng trình ma Mị không dám chạy khỏi căn nhà Pá Tra dù là nó u ám đến cùng cực Đã có lần Mị định dùng lá ngón tự tử nhưng vì thương cha cô đã cam tâm sống trong đau khổ mà bên cạnh lòng hiếu thảo đó độc giả có thể cảm nhận được nỗi lo về phong tục miền núi rằng cô phải chết rũ xương ở đây thôi Thực chất vấn đề tâm linh vẫn luôn là khía cạnh con người quan tâm dù là không hữu hình Văn chương từng nhắc đến vấn đề này không ít lần xét về phía tiêu cực thì điều này trở thành thế lực cản trở việc nhân vật tìm đến hạnh phúc mà Mị là điển hình cụ thể nhất Vùng cao Tây Bắc nói riêng và các khu vực miền núi nói chung đa phần sẽ chịu ảnh hưởng của nhiều tập tục từ thuở xưa Nhà thống lí cũng lợi dụng vấn đề này mà ép Mị chấp nhận Nhưng dẫu sao khát vọng sống của con người luôn được đưa lên hàng đầu Mị đã chạy theo sau A Phủ đã tự thoát khỏi sự trói buộc hữu hình và vô hình đó mạnh mẽ bước đến vùng đất mới cửa sự khởi đầu Hai con người xa lạ nhưng cùng chung sợi dây số phận đã nắm tay nhau chạy đi bỏ lại sau lưng là những uất ức ngang trái của quá khứ Vùng đất Phiền Sa mở ra với những ước mơ tươi sáng trong tương lai dưới ánh sáng cách mạng con người vững tin về bến bờ hạnh phúc…  C ữa một vườn địa đàng căng tràn nhựa sống độc giả bất chợt bắt gặp một bóng hình âm thầm với công việc nghìn năm Mảnh đất thực kia được anh chăm chút đến rực rỡ muôn trùng ánh trăng soi sáng một tâm hồn thiện lương và cao cả Có yêu thương mới có sự vun trồng có tôn trọng mới dành trọn sự nâng niu Khi khu vườn nở hoa loài hoa đẹp nhất mang tên nghệ sĩ Và Tô Hoài đã để lại đóa hoa ban rừng mang niềm tin bất diệt sức sống tiềm tàng không bao giờ phai nhạt nơi vùng Tây Bắc hoang sơ mà nhân vật Mị trong tác phẩm Vợ chồng A Phủ là điển hình sống trọn với thời gian 
+"""
+
+from random import randint
+for i in range(150):
+    dem = 0
+    x = ""
+    for i in string:
+        x+=i
+        if i == " ":
+            dem+=1
+        r = randint(2,6)
+        if dem == r:
+            f = open("test/"+x+".txt","a+")
+            f.write("hehe")
+            f.close()
+            x=""
+            dem = 0
